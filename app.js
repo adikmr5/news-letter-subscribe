@@ -30,10 +30,10 @@ app.post('/',function (req,res) {
 
   var jSONData=JSON.stringify(data);
   var options={
-    url:'https://us10.api.mailchimp.com/3.0/lists/763000260c',
+    url:'https://us10.api.mailchimp.com/3.0/lists/enter-list-id-here',
     method:'POST',
     headers : {
-            "Authorization" : 'Aditya bfb52b29bc8a8cc4295a35db4910a0da-us10'
+            "Authorization" : 'Aditya enter-api-key-here'
         },
     body:jSONData,
   };
@@ -54,10 +54,3 @@ app.post('/',function (req,res) {
 app.listen(3000,function() {
   console.log("Server Started at 3000");
 });
-
-
-//api key
-//bfb52b29bc8a8cc4295a35db4910a0da-us10
-
-//list id
-//763000260c
